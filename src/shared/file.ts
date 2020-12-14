@@ -12,8 +12,8 @@ export class FileModel extends RoleModel {
       throw new Error(path + ' != file');
     }
     const model = new FileModel();
-    const json = readFileSync(path).toString();
-    model.cache = json as {};
+    const text = readFileSync(path).toString();
+    model.cache = JSON.parse(text) as {};
     return model;
   }
 

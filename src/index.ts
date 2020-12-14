@@ -6,6 +6,11 @@ import {FastifyInstance, FastifyReply, FastifyRequest} from 'fastify';
 import {Configuration, validate} from './config';
 import {RequestModel, RoleModel} from './core/model';
 
+export * from './shared/jwt';
+export * from './shared/file';
+export * from './core/model';
+export * from './config/index';
+
 export const ErrorPermission = HttpErrors(
   403,
   "You don't have permission to access"
