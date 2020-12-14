@@ -1,0 +1,8 @@
+{
+    "admin": [
+        "*"
+    ],
+    "salesman": [
+        "product.sell"
+    ]
+}

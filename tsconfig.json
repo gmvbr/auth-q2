@@ -6,13 +6,15 @@
   "compilerOptions": {
     "baseUrl": "./src",
     "outDir": "lib",
-    "declaration": true
+    "declaration": true,
+    "esModuleInterop": true
   },
   "include": [
     "src/**/*.ts"
   ],
   "exclude": [
     "node_modules",
-    "src/**/*.spec.ts"
+    "src/**/*.spec.ts",
+    "src/shared/permission.json"
   ]
 }
